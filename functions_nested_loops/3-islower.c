@@ -1,18 +1,13 @@
 #include "main.h"
 /**
- * int _islower: c
- * if: si
- * else: donc
- * return: 0
+ * _islower - lowercase
+ * @c: variable
+ * Return: 0
  */
 int _islower(int c)
 {
-	{
-
 	if (c >= 97 && c <= 122)
-	return (1);
+		return (1);
 	else
-	return (0);
-	}
-	return (0);
-	}
+		return (0);
+}
