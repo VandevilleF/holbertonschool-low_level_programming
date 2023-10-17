@@ -1,13 +1,12 @@
 #include "main.h"
 /**
- * main - void
+ * print_alphabet - void
  * putchar: affiche un caractere
- * Return: 0
  */
 void print_alphabet(void)
 {
 	char ch;
-	
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		_putchar(ch);
