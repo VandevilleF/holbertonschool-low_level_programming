@@ -1,14 +1,13 @@
 #include "main.h"
-
 /**
- *_isupper - uppercase
- *@c: variable
+ * _isupper - Uppercase
+ * @c: variable
  * Return 0
  */
 
 int _isupper(int c)
 {
-	if(c >= 65 && c <= 90; c++)
+	if (c >= 65 && c <= 90)
 	return (1);
 
 	else
