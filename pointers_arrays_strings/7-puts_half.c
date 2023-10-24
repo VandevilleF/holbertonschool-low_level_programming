@@ -16,7 +16,7 @@ void puts_half(char *str)
 	/* if str has an odd length, start from middle +1*/
 	else
 		i = (l + 1) / 2;
-	for (;str[i] != '\0'; i++)
+	for (; str[i] != '\0'; i++)
 		_putchar(str[i]);
 	_putchar('\n');
 }
