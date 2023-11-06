@@ -16,7 +16,7 @@ char *_strdup(char *str)
 		return (NULL);
 	if (buffer == NULL)
 		return (NULL);
-	for (i = 0; i < strlen(str) + 1; i++)
+	for (i = 0; i < strlen(str); i++)
 		buffer[i] = str[i];
 	buffer[i] = '\0';
 	return (buffer);
