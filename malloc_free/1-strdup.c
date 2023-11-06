@@ -19,4 +19,5 @@ char *_strdup(char *str)
 	for (i = 0; i < strlen(str) + 1; i++)
 		buffer[i] = str[i];
 	return (buffer);
+	free(buffer);
 }
