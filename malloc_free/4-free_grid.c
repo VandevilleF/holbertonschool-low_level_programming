@@ -11,7 +11,7 @@ void free_grid(int **grid, int height)
 {
 	int i;
 
-	for (i = 0; i < height; i++)
-		free(grid[i]);
-	free(grid);
+	for (i = 0; i < height; i++)/*Loop each row*/
+		free(grid[i]);/*free memory alloc for each row*/
+	free(grid);/*free memory for array*/
 }
