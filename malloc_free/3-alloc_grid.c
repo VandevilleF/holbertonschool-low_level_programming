@@ -25,7 +25,12 @@ int **alloc_grid(int width, int height)
 	{
 		array[row] = malloc(sizeof(int) * width);/*Allocate memory for column*/
 		if (array[row] == NULL)
+		{
+			for (col = 0; col < row; col++)
+				free(array[col]);
+			free(array);
 			return (NULL);
+		}
 
 	for (col = 0; col < width; col++)
 		array[row][col] = 0;/*Initialize element of array with 0*/
