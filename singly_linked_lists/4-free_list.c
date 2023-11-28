@@ -20,6 +20,7 @@ void free_list(list_t *head)
 		/*Make head point to the next node*/
 		head = head->next;
 		/*Safely free variable temp*/
+		free(temp->str);
 		free(temp);
 	}
 }
