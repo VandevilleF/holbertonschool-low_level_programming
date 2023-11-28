@@ -16,13 +16,9 @@ size_t print_dlistint(const dlistint_t *h)
 	/*Traversing the linked list*/
 	while (h != NULL)
 	{
-		/*Check if n is NULL*/
-		if (h->n == '\0')
-			return (-1);
+		/*Print n*/
+		printf("%d\n", h->n);
 
-		else
-			/*Print n*/
-			printf("%d\n", h->n);
 		/*Increment h to the next link*/
 		h = h->next;
 		count++;
