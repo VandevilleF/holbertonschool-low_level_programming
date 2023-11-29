@@ -24,7 +24,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	/*Set pointers of the new node*/
 	last_node->next = NULL;
-	last_node->prev = *head;
 
 	/*Check if list is empty list*/
 	if ((*head) == NULL)
@@ -40,6 +39,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 		/*Add the node at the end of the DLL*/
 		temp->next = last_node;
+		last_node->prev = temp;
 	}
 	return (last_node);
 }
