@@ -17,11 +17,14 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		text_content = "";
 
+	/*Open file with write only and add text_content at the end with O_APPEND*/
 	file_d = open(filename, O_WRONLY | O_APPEND);
 
+	/*Check if file opening is unsucess*/
 	if (file_d == -1)
 		return (-1);
 
+	/*Write the content at the end of the file*/
 	file_w = write(file_d, text_content, strlen(text_content));
 
 	if (file_w == -1)
