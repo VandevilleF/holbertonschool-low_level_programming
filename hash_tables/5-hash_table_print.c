@@ -13,7 +13,7 @@ void hash_table_print(const hash_table_t *ht)
 	char *sep = "";
 
 	if (ht == NULL)
-		return;
+	return;
 
 	size = ht->size;
 
@@ -25,7 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 
 		while (temp != NULL)
 		{
-			printf("%s'%s' : '%s'", sep, temp->key, temp->value);
+			printf("%s'%s': '%s'", sep, temp->key, temp->value);
 			sep = ", ";
 			temp = temp->next;
 		}
