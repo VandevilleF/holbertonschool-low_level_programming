@@ -12,13 +12,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int size, index;
 	hash_node_t *temp;
 
+	/*Check if ht or key is not NULL*/
 	if (ht == NULL || key == NULL)
 		return (0);
 
+	/*Assigne size, find index of key*/
 	size = ht->size;
 	index = key_index((unsigned char *)key, size);
 	temp = ht->array[index];
 
+	/*Check for collision and printf value is true*/
 	while (temp != NULL)
 	{
 		if (strcmp(temp->key, key) == 0)
